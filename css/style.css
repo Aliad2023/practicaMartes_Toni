@@ -96,6 +96,10 @@ footer {
         column-gap: 140px;
         row-gap: 45px;
 
+        & h4{
+            align-self: end;
+        }
+
         & ul{
           font-size: 24px;
           color: var(--color-blanco);
@@ -112,8 +116,9 @@ footer {
 
         }
 
-        & .footer__logo {
-            grid-column: 1/-1;
+        & .footer__soporte {
+            grid-column: 3/-1;
+    
         }
         & .footer__copy {
             grid-column: 1/2;
