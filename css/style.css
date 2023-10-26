@@ -12,8 +12,67 @@
   src: url("") format("woff2"), url("") format("woff");
 }
 
-/* ******************************** */
 
-/* Colores */
 
-/* ******************************** */
+/* VARIABLES */
+/* ********* */
+:root {
+  /* Colores */
+  --color-blanco: #fdfeff;
+  --color-violeta: #8340c6;
+  --color-violeta-claro: #bcace7;
+  --color-violeta-oscuro: #032765;
+  --color-violeta-rojo: #b95fc3;
+  /* Tipografia */
+  --tipo-parrafo: 1rem;
+  --tipo-subtitulo: 1.5rem;
+  --tipo-lista: 1.25rem;
+  --tipo-copy: .625rem;
+  --tipo-link: 1.125rem;
+  /* Tamaño */
+  --tam-maxWidth: 1640px;
+}
+
+html{
+  font-family: sans-serif;
+  font-size: 16px;
+  color: var(--color-violeta-oscuro);
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-blanco);
+  font-size: var(--tipo-link);
+}
+.boton{
+  padding: 8px 19px;
+  border-radius: 20px;
+  background: var(--color-blanco);
+  color: var(--color-violeta-oscuro);
+}
+
+/* HEADER */
+/* ********************* */
+header{
+  background-color: var(--color-violeta-oscuro);
+  height: 176px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & nav{
+    width: 100%;
+    max-width: 1640px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & .logo{
+      flex-grow: 1;
+    }
+    
+  }
+}
+
